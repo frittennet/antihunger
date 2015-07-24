@@ -2,7 +2,7 @@ package ch.toothwit.antirain.main;
 
 import org.bukkit.World;
 import org.bukkit.plugin.java.JavaPlugin;
-
+import ch.toothwit.antirain.events.ServerEventListener;
 public class AntiRain extends JavaPlugin {
 	@Override
     public void onDisable() {
@@ -13,7 +13,7 @@ public class AntiRain extends JavaPlugin {
     @Override
     public void onEnable() {
         super.onEnable();
-        getServer().getPluginManager().registerEvents(this, this);
+        getServer().getPluginManager().registerEvents(new ServerEventListener(), this);
 
         for (World w : getServer().getWorlds()) {
             if (w.isThundering())
