@@ -1,5 +1,4 @@
 package ch.toothwit.antirain.main;
-
 import org.bukkit.World;
 import org.bukkit.plugin.java.JavaPlugin;
 import ch.toothwit.antirain.events.ServerEventListener;
