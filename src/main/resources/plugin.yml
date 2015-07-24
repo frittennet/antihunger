@@ -1,5 +1,5 @@
-name: AntiRain
-main: ch.toothwit.antirain.main.AntiRain
+name: AntiHunger
+main: ch.toothwit.antihunger.main.AntiHunger
 version: 0.1
-author: Houston9000
-description: Anti Rain Plugin
+author: fredo121, Houston9000
+description: Anti Hunger Plugin
