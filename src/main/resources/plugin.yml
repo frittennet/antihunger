@@ -1,5 +1,6 @@
 name: AntiHunger
-main: ch.toothwit.antihunger.main.AntiHunger
-version: 0.1
+version: '0.2'
 author: fredo121, Houston9000
 description: Anti Hunger Plugin
+main: net.fritten.antihunger.AntiHunger
+api-version: '1.21'

@@ -1,4 +1,4 @@
-package ch.toothwit.antihunger.events;
+package net.fritten.antihunger.events;
 
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;

@@ -1,12 +1,13 @@
-package ch.toothwit.antihunger.main; 
+package net.fritten.antihunger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin; 
-import ch.toothwit.antihunger.events.PlayerEventListener; 
+import org.bukkit.plugin.java.JavaPlugin;
+import net.fritten.antihunger.events.PlayerEventListener;
 
-public class AntiHunger extends JavaPlugin { 
-	@Override
+public final class AntiHunger extends JavaPlugin {
+
+    @Override
     public void onDisable() {
         super.onDisable();
         getLogger().info(this.getName() + "disabled successfully!");
@@ -18,9 +19,9 @@ public class AntiHunger extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerEventListener(), this);
 
         for(Player player : Bukkit.getOnlinePlayers()){
-        	player.setSaturation(20f);  
+            player.setSaturation(20f);
         }
-        
+
         getLogger().info(this.getName() + "enabled successfully!");
     }
 }
